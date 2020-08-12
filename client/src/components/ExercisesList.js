@@ -46,9 +46,9 @@ const ExercisesList = () => {
     return exercises.map((currentexercise) => {
       return (
         <Exercise
+          key={currentexercise._id}
           exercise={currentexercise}
           deleteExercise={deleteExercise}
-          key={currentexercise._id}
         />
       );
     });
